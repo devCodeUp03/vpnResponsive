@@ -37,6 +37,10 @@ button {
   cursor: pointer;
 }
 
+body {
+  background-color: #fbfbfb;
+}
+
 .container {
   width: 100%;
   margin-left: auto;
@@ -59,6 +63,9 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 100px;
+  position: sticky;
+  top: 0px;
+  background-color: #ffffff;
 }
 
 header p {
@@ -120,7 +127,7 @@ header ul {
 }
 
 .first-image-text p {
-  color: #4f5665; 
+  color: #4f5665;
   font-size: 16px;
 }
 
@@ -144,7 +151,6 @@ header ul {
   border: none;
 }
 
- 
 .icons {
   display: flex;
   justify-content: space-around;
@@ -157,7 +163,6 @@ header ul {
   align-items: center;
 }
 
-
 .icon-circle {
   height: 30px;
   width: 30px;
@@ -168,7 +173,7 @@ header ul {
   border-radius: 50%;
 }
 
-.icon-text{
+.icon-text {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -187,7 +192,6 @@ header ul {
   color: #4f5665;
   line-height: 25px;
 }
-
 
 .second-image-text {
   display: flex;
@@ -235,114 +239,256 @@ header ul {
   gap: 10px;
 }
 
-.choose-your-plan{
-    display: flex; 
-    flex-direction: column;
-    gap: 40px;
-    align-items: center;
+.choose-your-plan {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
 }
 
-.third-text{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    align-items: center;
+.third-text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
 }
 
-
-.plan{
-    border: 1px solid #DDDDDD;
-    max-height: 700px;
-    min-width: 300px;
-    /* flex-grow: 80%; */
-    gap: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 40px 20px;
-    margin-top: 20px;
-    border-radius: 10px;
-
+.plan {
+  border: 1px solid #dddddd;
+  max-height: 700px;
+  min-width: 300px;
+  /* flex-grow: 80%; */
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  margin-top: 20px;
+  border-radius: 10px;
 }
-.img-plan{
+.img-plan {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 40px;
 }
 
-
-.third-list-btn{
+.third-list-btn {
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
 
-.plan ul{
-    display: flex; 
-    flex-direction: column;
-    gap: 10px;
-    /* justify-content: center; */
+.plan ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* justify-content: center; */
 }
 
-.plan ul li{
-    display: flex;
-    gap: 6px;
-    align-items: center;
+.plan ul li {
+  display: flex;
+  gap: 6px;
+  align-items: center;
 }
 
-.third-text-btn{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
+.third-text-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
 }
 
-.third-text-btn p{
-    font-size: 20px;
-    font-weight: medium;
-    line-height: 25px;
+.third-text-btn p {
+  font-size: 20px;
+  font-weight: medium;
+  line-height: 25px;
 }
 
-.third-text-btn .third-btn{
-    width: 140px;
-    height: 40px;
-    border-radius: 40px;;
-    border: 1px solid #F53838;
-    background-color: inherit;
-    color: #F53838;
-    font-size: 14px;
-    font-weight: bold;
+.third-text-btn .third-btn {
+  width: 140px;
+  height: 40px;
+  border-radius: 40px;
+  border: 1px solid #f53838;
+  background-color: inherit;
+  color: #f53838;
+  font-size: 14px;
+  font-weight: bold;
 }
 
-.offer-section{
-    border: 1px solid #F53838;
+.offer-section {
+  border: 1px solid #f53838;
 }
 
-.offer-btn{
-    background-color: #F53838;
-    color: #FFFFFF;
-    width: 140px;
-    height: 40px;
-    border-radius: 40px;
-    font-size: 14px;
-    font-weight: bold;
-    border: none;
+.offer-btn {
+  background-color: #f53838;
+  color: #ffffff;
+  width: 140px;
+  height: 40px;
+  border-radius: 40px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
 }
 
-.offer-bold{
+.offer-bold {
   font-size: 25px;
   font-weight: 500;
-  color: #0B132A;
+  color: #0b132a;
   line-height: 30px;
 }
 
-
-
-@media (min-width: 300px){    
- /* only for icons for my own phone vivo */
+.global-network {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
 }
 
+.global-image {
+  /* min-height: 100%; */
+  /* height: 250px; */
+  width: 100%;
+}
+
+.global-social {
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+  gap: 40px;
+  align-items: start;
+}
+
+/* #amazon{
+  height: 100px;
+} */
+
+.global-social img {
+  height: 100px;
+  width: 250px;
+}
+
+.customers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.customers-text {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.customer-image-circle {
+  display: flex;
+  gap: 20px;
+}
+
+.customer-image-circle img {
+  height: 40px;
+  width: 40px;
+  /* object-fit: cover; */
+  border-radius: 50%;
+}
+
+.customer {
+  border: 1px solid #f53838;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 40px;
+  max-width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.customer-upper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.customer-upper p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.subscribe {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+  align-items: center;
+  background-color: #ffffff;
+  margin-top: 40px;
+  min-height: 240px;
+  padding: 20px;
+}
+
+.subscribe p {
+  line-height: 30px;
+}
+
+.subscribe button {
+  height: 60px;
+  width: 200px;
+  border-radius: 10px;
+  background-color: #f53838;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+}
+
+footer {
+  background-color: #f8f8f8;
+  min-height: 500px;
+  width: 100%;
+}
+
+.vpn-inshort {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: center;
+}
+
+.foot-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.all-link {
+  /* width: 100%; */
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.head-bold{
+  color:#0b132a;
+  font-size: 18px; 
+  line-height: 30px;
+  font-weight: 900;
+}
+
+footer p.container {
+ text-align: center;
+}
+
+@media (min-width: 300px) {
+  /* only for icons for my own phone vivo */
+}
 
 @media (min-width: 640px) {
   .container {
@@ -353,11 +499,11 @@ header ul {
     display: flex;
     justify-content: space-around;
   }
-  
+
   .icon {
     gap: 20px;
   }
-  
+
   .icon-circle {
     height: 40px;
     width: 40px;
@@ -367,20 +513,24 @@ header ul {
     justify-content: center;
     border-radius: 50%;
   }
-  
+
   .icon-text-bold {
     font-size: 20px;
     font-weight: bold;
     color: #0b132a;
     line-height: 25px;
   }
-  
+
   .icon-second-text {
     font-size: 16px;
     font-weight: 400;
     color: #4f5665;
     line-height: 25px;
   }
+}
+
+.all-link .link{
+  text-align: center;
 }
 
 @media (min-width: 1024px) {
@@ -400,7 +550,7 @@ header ul {
   header svg {
     display: none;
   }
-  
+
   .header-btns {
     display: flex;
     gap: 20px;
@@ -444,7 +594,7 @@ header ul {
     height: 50px;
     width: 50px;
   }
-  .icon{
+  .icon {
     flex-direction: row;
   }
 
@@ -463,7 +613,7 @@ header ul {
     align-items: center;
     gap: 60px;
   }
-/* 
+  /* 
   .second-image {
     min-height: 400px;
   } */
@@ -496,55 +646,112 @@ header ul {
     gap: 30px;
   }
 
-
-  .plan{
+  .plan {
     min-height: 700px;
     min-width: 280px;
     gap: 25px;
     padding: 40px 20px;
     margin-top: 30px;
-}
+  }
 
-
-.plan ul{
+  .plan ul {
     gap: 12px;
-}
+  }
 
-.plan ul li{
+  .plan ul li {
     gap: 8px;
     font-size: 18px;
-}
+  }
 
-.third-text-btn{
+  .third-text-btn {
     gap: 25px;
-}
+  }
 
-.third-text-btn p{
+  .third-text-btn p {
     font-size: 25px;
     line-height: 30px;
-}
+  }
 
-.third-text-btn .third-btn{
+  .third-text-btn .third-btn {
     width: 150px;
     height: 45px;
     font-size: 16px;
-}
+  }
 
-
-.offer-btn{
+  .offer-btn {
     width: 150px;
     height: 45px;
     border-radius: 40px;
     font-size: 16px;
-}
+  }
 
-.img-plan{
+  .img-plan {
     gap: 60px;
-}
+  }
 
-.third-list-btn{
+  .third-list-btn {
     justify-content: space-between;
     height: 350px;
- }
+  }
 
+  .global-social img {
+    max-height: 80px;
+    max-width: 180px;
+  }
+
+  .global-social {
+    flex-direction: row;
+    gap: 40px;
+    width: 100%;
+    margin-top: 50px;
+  }
+  .three-customer {
+    display: flex;
+    gap: 10px;
+  }
+  .customer-image-circle {
+    gap: 16px;
+  }
+
+  .customer {
+    padding: 10px;
+    gap: 30px;
+  }
+
+  .subscribe {
+    flex-direction: row;
+    text-align: start;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding: 30px;
+  }
+
+  .subscribe button {
+    height: 60px;
+    width: 220px;
+    font-size: 20px;
+  }
+
+  .foot-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  .all-link {
+    gap: 100px;
+  }
+
+  .vpn-inshort {
+    align-items: start;
+  }
+
+  footer p.container {
+    text-align: start;
+   }
+
+   .all-link .link{
+    text-align: start;
+  }
 }
+
